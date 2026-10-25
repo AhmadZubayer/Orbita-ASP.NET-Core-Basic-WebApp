@@ -4,6 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Orbita_ProductTrackingApp_ASP.NET_Core</RootNamespace>
   </PropertyGroup>
 
 </Project>

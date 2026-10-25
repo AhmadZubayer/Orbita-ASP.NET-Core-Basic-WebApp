@@ -1,8 +1,8 @@
-using BasicProjectManagement.Models;
 using Microsoft.AspNetCore.Mvc;
+using Orbita_ProductTrackingApp_ASP.NET_Core.Models;
 using System.Diagnostics;
 
-namespace BasicProjectManagement.Controllers
+namespace Orbita_ProductTrackingApp_ASP.NET_Core.Controllers
 {
     public class HomeController : Controller
     {

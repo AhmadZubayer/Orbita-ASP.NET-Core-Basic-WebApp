@@ -1,0 +1,35 @@
+﻿@model Orbita_ProductTrackingApp_ASP.NET_Core.ViewModel.InventoryViewModel
+
+@{
+    ViewData["Title"] = "Inventory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Inventory</h1>
+
+<h2>@Model.Supplier.Name</h2>
+<p>Email: @Model.Supplier.Email</p>
+<p>Phone: @Model.Supplier.Phone</p>
+
+<table class="table table-striped">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </tr>
+
+    @foreach (var p in Model.Product)
+    {
+        <tr>
+            <td>@p.Id</td>
+            <td>
+                <a asp-controller="Product"
+                   asp-action="ProductDetails"
+                   asp-route-id="@p.Id">@p.Name</a>
+            </td>
+            <td>@p.Price</td>
+            <td>@p.Quantity</td>
+        </tr>
+    }
+</table>

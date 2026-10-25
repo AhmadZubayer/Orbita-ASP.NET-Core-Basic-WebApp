@@ -1,4 +1,4 @@
-namespace BasicProjectManagement.Models
+namespace Orbita_ProductTrackingApp_ASP.NET_Core.Models
 {
     public class ErrorViewModel
     {
