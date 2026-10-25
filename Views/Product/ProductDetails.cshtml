@@ -1,0 +1,22 @@
+﻿@model Orbita_ProductTrackingApp_ASP.NET_Core.Models.Product
+@{
+    ViewData["Title"] = "ProductDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@if (ViewBag.State == false)
+{
+    <h1>@ViewData["Msg"]</h1>
+} 
+else
+{
+    <h1>Product Details</h1>
+    <p><strong>ID: </strong> @Model.Id</p>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Price:</strong> @Model.Price</p>
+    <p><strong>Quantity:</strong> @Model.Quantity</p>
+}
+
+<a asp-controller="Product" asp-action="AllProducts" class="btn btn-secondary">Back</a>
+
